@@ -1,0 +1,14 @@
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\bin\Debug\net5.0\LowercaseBeautify.deps.json
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\bin\Debug\net5.0\LowercaseBeautify.dll
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\bin\Debug\net5.0\ref\LowercaseBeautify.dll
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\bin\Debug\net5.0\LowercaseBeautify.pdb
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\bin\Debug\net5.0\Contract.dll
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\bin\Debug\net5.0\Contract.pdb
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\LowercaseBeautify.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\LowercaseBeautify.AssemblyInfoInputs.cache
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\LowercaseBeautify.AssemblyInfo.cs
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\LowercaseBeautify.csproj.CoreCompileInputs.cache
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\LowercaseBeautify.csproj.CopyComplete
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\LowercaseBeautify.dll
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\ref\LowercaseBeautify.dll
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\LowercaseBeautify.pdb

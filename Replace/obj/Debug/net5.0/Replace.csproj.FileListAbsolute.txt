@@ -1,0 +1,14 @@
+C:\Users\luann\source\repos\Rename\Replace\bin\Debug\net5.0\Replace.deps.json
+C:\Users\luann\source\repos\Rename\Replace\bin\Debug\net5.0\Replace.dll
+C:\Users\luann\source\repos\Rename\Replace\bin\Debug\net5.0\ref\Replace.dll
+C:\Users\luann\source\repos\Rename\Replace\bin\Debug\net5.0\Replace.pdb
+C:\Users\luann\source\repos\Rename\Replace\bin\Debug\net5.0\Contract.dll
+C:\Users\luann\source\repos\Rename\Replace\bin\Debug\net5.0\Contract.pdb
+C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\Replace.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\Replace.AssemblyInfoInputs.cache
+C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\Replace.AssemblyInfo.cs
+C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\Replace.csproj.CoreCompileInputs.cache
+C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\Replace.csproj.CopyComplete
+C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\Replace.dll
+C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\ref\Replace.dll
+C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\Replace.pdb

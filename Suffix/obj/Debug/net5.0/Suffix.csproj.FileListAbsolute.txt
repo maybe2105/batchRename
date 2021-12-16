@@ -1,0 +1,14 @@
+C:\Users\luann\source\repos\Rename\Suffix\bin\Debug\net5.0\Suffix.deps.json
+C:\Users\luann\source\repos\Rename\Suffix\bin\Debug\net5.0\Suffix.dll
+C:\Users\luann\source\repos\Rename\Suffix\bin\Debug\net5.0\ref\Suffix.dll
+C:\Users\luann\source\repos\Rename\Suffix\bin\Debug\net5.0\Suffix.pdb
+C:\Users\luann\source\repos\Rename\Suffix\bin\Debug\net5.0\Contract.dll
+C:\Users\luann\source\repos\Rename\Suffix\bin\Debug\net5.0\Contract.pdb
+C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\Suffix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\Suffix.AssemblyInfoInputs.cache
+C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\Suffix.AssemblyInfo.cs
+C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\Suffix.csproj.CoreCompileInputs.cache
+C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\Suffix.csproj.CopyComplete
+C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\Suffix.dll
+C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\ref\Suffix.dll
+C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\Suffix.pdb

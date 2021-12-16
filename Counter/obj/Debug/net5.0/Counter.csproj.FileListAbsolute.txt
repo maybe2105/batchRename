@@ -1,0 +1,15 @@
+C:\Users\luann\source\repos\Rename\Counter\bin\Debug\net5.0\Counter.deps.json
+C:\Users\luann\source\repos\Rename\Counter\bin\Debug\net5.0\Counter.dll
+C:\Users\luann\source\repos\Rename\Counter\bin\Debug\net5.0\ref\Counter.dll
+C:\Users\luann\source\repos\Rename\Counter\bin\Debug\net5.0\Counter.pdb
+C:\Users\luann\source\repos\Rename\Counter\bin\Debug\net5.0\Contract.dll
+C:\Users\luann\source\repos\Rename\Counter\bin\Debug\net5.0\Contract.pdb
+C:\Users\luann\source\repos\Rename\Counter\obj\Debug\net5.0\Counter.csproj.AssemblyReference.cache
+C:\Users\luann\source\repos\Rename\Counter\obj\Debug\net5.0\Counter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luann\source\repos\Rename\Counter\obj\Debug\net5.0\Counter.AssemblyInfoInputs.cache
+C:\Users\luann\source\repos\Rename\Counter\obj\Debug\net5.0\Counter.AssemblyInfo.cs
+C:\Users\luann\source\repos\Rename\Counter\obj\Debug\net5.0\Counter.csproj.CoreCompileInputs.cache
+C:\Users\luann\source\repos\Rename\Counter\obj\Debug\net5.0\Counter.csproj.CopyComplete
+C:\Users\luann\source\repos\Rename\Counter\obj\Debug\net5.0\Counter.dll
+C:\Users\luann\source\repos\Rename\Counter\obj\Debug\net5.0\ref\Counter.dll
+C:\Users\luann\source\repos\Rename\Counter\obj\Debug\net5.0\Counter.pdb

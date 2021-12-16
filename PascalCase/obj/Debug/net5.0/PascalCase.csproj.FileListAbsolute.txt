@@ -1,0 +1,14 @@
+C:\Users\luann\source\repos\Rename\PascalCase\bin\Debug\net5.0\PascalCase.deps.json
+C:\Users\luann\source\repos\Rename\PascalCase\bin\Debug\net5.0\PascalCase.dll
+C:\Users\luann\source\repos\Rename\PascalCase\bin\Debug\net5.0\ref\PascalCase.dll
+C:\Users\luann\source\repos\Rename\PascalCase\bin\Debug\net5.0\PascalCase.pdb
+C:\Users\luann\source\repos\Rename\PascalCase\bin\Debug\net5.0\Contract.dll
+C:\Users\luann\source\repos\Rename\PascalCase\bin\Debug\net5.0\Contract.pdb
+C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\PascalCase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\PascalCase.AssemblyInfoInputs.cache
+C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\PascalCase.AssemblyInfo.cs
+C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\PascalCase.csproj.CoreCompileInputs.cache
+C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\PascalCase.csproj.CopyComplete
+C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\PascalCase.dll
+C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\ref\PascalCase.dll
+C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\PascalCase.pdb
