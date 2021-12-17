@@ -152,7 +152,7 @@
                                     <GridViewColumn Header="Path" Width="80">
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
-                                                <TextBlock Text="{Binding Extension}"/>
+                                                <TextBlock Text="{Binding FullPath}"/>
                                             </DataTemplate>
                                         </GridViewColumn.CellTemplate>
                                     </GridViewColumn>
