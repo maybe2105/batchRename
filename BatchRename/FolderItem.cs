@@ -9,13 +9,14 @@ namespace BatchRename
 {
     internal class FolderItem
     {
-
+        public FileInfo folder { get; set; }
         public string Name { get; set; }
         public string FullPath { get; set; }
         public string NewName { get; set; }
         public string Error { get; set; }
         public FolderItem(string path)
         {
+            folder = new FileInfo(path);
             FullPath = path;
             Name = Path.GetFileNameWithoutExtension(path);
             NewName = "";
