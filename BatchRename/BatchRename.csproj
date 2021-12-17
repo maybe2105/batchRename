@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icon\add.png" />
+    <None Remove="icon\add_file.png" />
+    <None Remove="icon\bottom-arrow.png" />
+    <None Remove="icon\clear.png" />
+    <None Remove="icon\down-arrow.png" />
+    <None Remove="icon\top-arrow.png" />
+    <None Remove="icon\up-arrow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icon\add.png" />
+    <Resource Include="icon\add_file.png" />
+    <Resource Include="icon\bottom-arrow.png" />
+    <Resource Include="icon\clear.png" />
+    <Resource Include="icon\down-arrow.png" />
+    <Resource Include="icon\top-arrow.png" />
+    <Resource Include="icon\up-arrow.png" />
+  </ItemGroup>
+
+</Project>
