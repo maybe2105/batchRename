@@ -12,7 +12,7 @@ namespace Contract
         public List<FileInfo> ListOriginalFiles { get; set; }
         public List<DirectoryInfo> ListOriginalFolders { get; set; }
         public string Data { get; set; }
-        public string TextToFind { get; set; }
+        public string Replacer { get; set; }
        
 
         public void getFilesDirectories(FileInfo[] filesList, Boolean recursiveMode)

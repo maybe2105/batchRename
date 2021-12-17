@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0RKjmDsncKvC59B1ybKrAyeadFVL2Lwfsj0ijMOeCz0242SX8MEb98+29rXcQyZuBvcycfD0Aidnj4VWZkl4Xg==",
+  "dgSpecHash": "Awc9NtbAzqvRfdW9KcMFKXcc2uvIYo2zerWY5ixyMtKhNEe+gAY67lycojI57aWdEh5fItSuekS6H8JXh6CVUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\BatchRename.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\BatchRename.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\luann\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
   "logs": []
 }

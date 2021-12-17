@@ -17,32 +17,34 @@ namespace TestContract
             // Set up dummies
             FileInfo dummy = new FileInfo(@"D:\dummy.txt");
             FileInfo dummyFolder = new FileInfo(@"D:\dummyfolder");
+
             RuleContent renameInfo = new RuleContent();
             renameInfo.getFilesDirectories(new FileInfo[] { dummy, dummyFolder }, true); // if recursive mode is on it will scann through all files in folders
 
             // Change file extension
-            IRule changeExtRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "ChangeExtension");
-            renameInfo.Data = "pdf";
-            try
-            {
-                Boolean result = changeExtRule.ApplyRule(renameInfo); // return true if success
-            }
-            catch (Exception error)
-            {
-                Console.WriteLine(error.Message);
-            }
-
+            
+                IRule changeExtRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "ChangeExtension");
+                renameInfo.Data = "";
+                try
+                {
+                    Boolean result = changeExtRule.ApplyRule(renameInfo); // return true if success
+                }
+                catch (Exception error)
+                {
+                    Console.WriteLine(error.Message);
+                }
+            
             // Trim file name
-            IRule trimRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "Trim");
-            try
-            {
-                Boolean result = trimRule.ApplyRule(renameInfo); // return true if success
-            }
-            catch (Exception error)
-            {
-                Console.WriteLine(error.Message);
-            }
-
+                IRule trimRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "Trim");
+                try
+                {
+                    Boolean result = trimRule.ApplyRule(renameInfo); // return true if success
+                }
+                catch (Exception error)
+                {
+                    Console.WriteLine(error.Message);
+                }
+                
             // Add suffix counter
             IRule counterRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "Counter");
             //try
