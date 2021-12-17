@@ -20,3 +20,6 @@ C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net
 C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\ref\BatchRename.dll
 C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\BatchRename.pdb
 C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\BatchRename.genruntimeconfig.cache
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\bin\Debug\net5.0-windows\Contract.dll
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\bin\Debug\net5.0-windows\Contract.pdb
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\BatchRename.csproj.CopyComplete

@@ -13,16 +13,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Contract;
+
 namespace BatchRename
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        List<IRule> selectedRule;
         public MainWindow()
         {
             InitializeComponent();
+            LibLoader.loadDll();
+            selectedRule = new List<IRule>();
+            lv_method.ItemsSource = LibLoader.Rules;
+            lv_methodSelected.ItemsSource = selectedRule;
         }
 
         private void MenuMethod_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -125,9 +129,21 @@ namespace BatchRename
 
         }
 
-        private void onClickCheckedBox(object sender, RoutedEventArgs e)
+
+        private void onClickRuleItem(object sender, MouseButtonEventArgs e)
+        {
+            var item = (FrameworkElement)e.OriginalSource;
+            selectedRule.Add((Contract.IRule)item.DataContext);
+
+            lv_methodSelected.Items.Refresh();
+        }
+
+        private void onClickRuleSelectedItem(object sender, MouseButtonEventArgs e)
         {
 
+            var item = (FrameworkElement)e.OriginalSource;
+            selectedRule.Remove((Contract.IRule)item.DataContext);
+            lv_methodSelected.Items.Refresh();
         }
     }
 }

@@ -18,6 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Contract\Contract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="icon\add.png" />
     <Resource Include="icon\add_file.png" />
     <Resource Include="icon\bottom-arrow.png" />

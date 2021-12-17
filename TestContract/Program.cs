@@ -10,7 +10,7 @@ namespace TestContract
         {
             // Load dlls
             LibLoader.loadDll();
-            Console.WriteLine("dll(s) loaded");
+            Console.WriteLine(LibLoader.Rules[0].RuleName);
 
             Console.WriteLine("Welcome to the playground");
 
