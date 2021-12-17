@@ -59,7 +59,7 @@ namespace TestContract
             // Replace by regex or string
             IRule replaceRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "Replace");
             renameInfo.Data = "file";
-            renameInfo.TextToFind = "newfile";
+            renameInfo.Replacer = "newfile";
             //try
             //{
             //    Boolean result = replaceRule.ApplyRule(renameInfo); // return true if success
