@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/2baxfu/qQEcxB9bYmRH0Mw9unmsj/qra7PqjSEtNZHwYHj9nV1uAH3FjejIbrXOGzN2X7BPf7aOaNnYyBLx4A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\luann\\source\\repos\\Rename\\TestContract\\TestContract.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\luann\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

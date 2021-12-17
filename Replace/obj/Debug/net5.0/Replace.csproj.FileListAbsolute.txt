@@ -12,3 +12,4 @@ C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\Replace.csproj.CopyC
 C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\Replace.dll
 C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\ref\Replace.dll
 C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\Replace.pdb
+C:\Users\luann\source\repos\Rename\Replace\obj\Debug\net5.0\Replace.csproj.AssemblyReference.cache

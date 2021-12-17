@@ -12,6 +12,9 @@ namespace Counter
     {
         public string RuleName { get => "Counter"; }
 
+        public string Data { get; set; }
+
+
         public Boolean ApplyRule(RuleContent renameContent)
         {
             try

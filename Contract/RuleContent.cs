@@ -11,13 +11,9 @@ namespace Contract
     {
         public List<FileInfo> ListOriginalFiles { get; set; }
         public List<DirectoryInfo> ListOriginalFolders { get; set; }
-        public string Prefix { get; set; }
-        public string Suffix { get; set; }
-        public string PascalCase { get; set; } = " ";
-        public string Replacer { get; set; }
-        public string Regex { get; set; }
-        public string NewExtension { get; set; }
-
+        public string Data { get; set; }
+        public string TextToFind { get; set; }
+       
 
         public void getFilesDirectories(FileInfo[] filesList, Boolean recursiveMode)
         {

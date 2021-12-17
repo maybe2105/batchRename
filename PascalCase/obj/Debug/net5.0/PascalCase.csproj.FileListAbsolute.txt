@@ -12,3 +12,4 @@ C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\PascalCase.csproj
 C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\PascalCase.dll
 C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\ref\PascalCase.dll
 C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\PascalCase.pdb
+C:\Users\luann\source\repos\Rename\PascalCase\obj\Debug\net5.0\PascalCase.csproj.AssemblyReference.cache

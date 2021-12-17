@@ -20,7 +20,7 @@ namespace PascalCase
             {
                 string rawName = Path.GetFileNameWithoutExtension(fileObject.Name);
 
-                string lowerCaseName = rawName.ToLower().Replace(renameContent.PascalCase, " ");
+                string lowerCaseName = rawName.ToLower().Replace(renameContent.Data, " ");
 
                 TextInfo textInfo = CultureInfo.CurrentCulture.TextInfo;
 

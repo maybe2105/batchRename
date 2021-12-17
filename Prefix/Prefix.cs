@@ -13,14 +13,14 @@ namespace Prefix
             try
             {
              
-                if (renameContent.Prefix.IndexOfAny(Path.GetInvalidFileNameChars()) != -1)
+                if (renameContent.Data.IndexOfAny(Path.GetInvalidFileNameChars()) != -1)
                 {
                     throw new Exception($"Prefix can not contain invalid character");
                 }
 
                 foreach (FileInfo fileObject in renameContent.ListOriginalFiles)
                 {
-                    if (fileObject.Name.Length + renameContent.Prefix.Length > 255)
+                    if (fileObject.Name.Length + renameContent.Data.Length > 255)
                     {
                         throw new Exception($"maximum length of the filename cannot exceed 255 characters");
                     }
@@ -34,7 +34,7 @@ namespace Prefix
                 {
                     string rawName = Path.GetFileNameWithoutExtension(fileObject.Name);
 
-                    string newPath = $"{fileObject.DirectoryName}\\{renameContent.Prefix}{rawName}{fileObject.Extension}";
+                    string newPath = $"{fileObject.DirectoryName}\\{renameContent.Data}{rawName}{fileObject.Extension}";
 
                     File.Move(fileObject.FullName, newPath);
 

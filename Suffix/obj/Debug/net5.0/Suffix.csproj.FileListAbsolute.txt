@@ -12,3 +12,4 @@ C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\Suffix.csproj.CopyCom
 C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\Suffix.dll
 C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\ref\Suffix.dll
 C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\Suffix.pdb
+C:\Users\luann\source\repos\Rename\Suffix\obj\Debug\net5.0\Suffix.csproj.AssemblyReference.cache

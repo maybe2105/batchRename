@@ -9,3 +9,4 @@ C:\Users\luann\source\repos\Rename\Contract\bin\Debug\net5.0\Contract.pdb
 C:\Users\luann\source\repos\Rename\Contract\obj\Debug\net5.0\Contract.dll
 C:\Users\luann\source\repos\Rename\Contract\obj\Debug\net5.0\ref\Contract.dll
 C:\Users\luann\source\repos\Rename\Contract\obj\Debug\net5.0\Contract.pdb
+C:\Users\luann\source\repos\Rename\Contract\obj\Debug\net5.0\Contract.csproj.AssemblyReference.cache

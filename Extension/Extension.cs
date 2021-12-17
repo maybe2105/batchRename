@@ -18,11 +18,11 @@ namespace Extension
                 foreach (FileInfo fileObject in renameContent.ListOriginalFiles)
                 {
                    
-                    if (fileObject.Name.Length + renameContent.NewExtension.Length - fileObject.Extension.Length > 255)
+                    if (fileObject.Name.Length + renameContent.Data.Length - fileObject.Extension.Length > 255)
                     {
                         throw new Exception($"maximum length of the filename cannot exceed 255 characters");
                     }
-                    if (!regex.IsMatch(renameContent.NewExtension))
+                    if (!regex.IsMatch(renameContent.Data))
                     {
                         throw new Exception($"Extension name can not contain special character");
                     }
@@ -32,7 +32,7 @@ namespace Extension
                 List<FileInfo> newFiles = new List<FileInfo>();
                 foreach (FileInfo fileObject in renameContent.ListOriginalFiles)
                 {
-                    string newPath = Path.ChangeExtension(fileObject.FullName, renameContent.NewExtension);
+                    string newPath = Path.ChangeExtension(fileObject.FullName, renameContent.Data);
                     File.Move(fileObject.FullName, newPath);
                     newFiles.Add(new FileInfo(newPath));
                     index++;

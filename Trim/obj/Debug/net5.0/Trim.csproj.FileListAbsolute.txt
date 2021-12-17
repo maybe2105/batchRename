@@ -12,3 +12,4 @@ C:\Users\luann\source\repos\Rename\Trim\obj\Debug\net5.0\Trim.csproj.CopyComplet
 C:\Users\luann\source\repos\Rename\Trim\obj\Debug\net5.0\Trim.dll
 C:\Users\luann\source\repos\Rename\Trim\obj\Debug\net5.0\ref\Trim.dll
 C:\Users\luann\source\repos\Rename\Trim\obj\Debug\net5.0\Trim.pdb
+C:\Users\luann\source\repos\Rename\Trim\obj\Debug\net5.0\Trim.csproj.AssemblyReference.cache

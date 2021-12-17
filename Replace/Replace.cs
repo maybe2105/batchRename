@@ -17,7 +17,7 @@ namespace Replace
             {
                 string rawName = Path.GetFileNameWithoutExtension(fileObject.Name);
 
-                string AfterReplaceName = Regex.Replace(rawName, renameContent.Regex, renameContent.Replacer);
+                string AfterReplaceName = Regex.Replace(rawName, renameContent.Data, renameContent.TextToFind);
 
                 if (AfterReplaceName.Length > 255)
                 {
@@ -37,7 +37,7 @@ namespace Replace
             {
                 string RawName = Path.GetFileNameWithoutExtension(fileObject.Name);
 
-                string AfterReplaceName = Regex.Replace(RawName, renameContent.Regex, renameContent.Replacer);
+                string AfterReplaceName = Regex.Replace(RawName, renameContent.Data, renameContent.TextToFind);
 
                 string newPath = $"{fileObject.DirectoryName}\\{AfterReplaceName}{fileObject.Extension}";
 
