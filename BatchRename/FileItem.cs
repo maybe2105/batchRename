@@ -18,7 +18,7 @@ namespace BatchRename
         {
             file = new FileInfo(path);
             FullPath = path;
-            Name = Path.GetFileNameWithoutExtension(path);
+            Name = Path.GetFileName(path);
             NewName = "";
             Error = "";
         }

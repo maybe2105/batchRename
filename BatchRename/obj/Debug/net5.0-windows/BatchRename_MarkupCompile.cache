@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\luann\source\repos\Rename\BatchRename\obj\Debug\net5.0-windows\
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\
 BatchRename
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\luann\source\repos\Rename\BatchRename\App.xaml
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\App.xaml
 6-1905168522
 
 111430448815
-2031148721901
+2031313311663
 ChangeExtension.xaml;MainWindow.xaml;PascalCase.xaml;Prefix.xaml;Replace.xaml;Suffix.xaml;
 
-True
+False
 

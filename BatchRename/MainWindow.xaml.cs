@@ -176,6 +176,17 @@ namespace BatchRename
 
         private void onClickChangeFileButton(object sender, RoutedEventArgs e)
         {
+            fileList.ForEach(file =>
+            {
+                if (file.NewName != "")
+                {
+                    string path = file.FullPath;
+                    file.file = new FileInfo(path);
+                    file.Name = file.NewName;
+                    file.NewName = "";
+                    file.Error = "";
+                }
+            });
             fileList.ForEach(file => {
                 RuleContent ruleContent = new RuleContent();
                 ruleContent.getFilesDirectories(new FileInfo[] { file.file }, false);
@@ -186,7 +197,10 @@ namespace BatchRename
                         ruleContent.Replacer = rule.RuleContent.Replacer;
                         try
                         {
-                            Boolean result = rule.Rule.ApplyRule(ruleContent); // return true if success
+                            ReturnApply result = rule.Rule.ApplyRule(ruleContent); 
+                            file.FullPath = result.Path;
+                            file.NewName = result.Name;
+                            lv_files.Items.Refresh();
                         }
                         catch (Exception error)
                         {
@@ -200,6 +214,7 @@ namespace BatchRename
 
         private void onClickChangeFolderButton(object sender, RoutedEventArgs e)
         {
+            
             folderList.ForEach(folder => {
                 RuleContent ruleContent = new RuleContent();
                 ruleContent.getFilesDirectories(new FileInfo[] { folder.folder }, false);
@@ -210,12 +225,15 @@ namespace BatchRename
                         ruleContent.Replacer = rule.RuleContent.Replacer;
                         try
                         {
-                            Boolean result = rule.Rule.ApplyRule(rule.RuleContent); // return true if success
+                            ReturnApply result = rule.Rule.ApplyRule(ruleContent);
+                            folder.FullPath = result.Path;
+                            folder.NewName = result.Name;
+                            lv_folder.Items.Refresh();
                         }
                         catch (Exception error)
                         {
                             folder.Error = error.Message;
-                            lv_files.Items.Refresh();
+                            lv_folder.Items.Refresh();
                         }
                     }
                 });
@@ -231,6 +249,22 @@ namespace BatchRename
         {
             fileList.Clear();
             lv_files.Items.Refresh();
+        }
+
+        private void onClickClearFolderButton(object sender, RoutedEventArgs e)
+        {
+            folderList.Clear();
+            lv_folder.Items.Refresh();
+        }
+
+        private void onClickUpPresetMethodMenuButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void onClickSavePresetMethodMenuButton(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

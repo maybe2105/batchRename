@@ -20,30 +20,14 @@
         <Grid Grid.Column="0" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition/>
                 <RowDefinition />
             </Grid.RowDefinitions>
 
-            <ToolBarTray  Name="methodToolBarTray" IsLocked="True" Grid.Row="0">
+            <ToolBarTray  Name="methodToolBarTray" IsLocked="True" Grid.Row="1">
                 <ToolBar >
-                    <Menu Name="methodMenu">
-                        <MenuItem Name="addMethodMenu">
-                            <MenuItem.Header>
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Height="16" Width="16" Source="/icon/add.png" />
-                                    <TextBlock Text="Add method" FontSize="12"  Margin="2,0,0,0"/>
-                                </StackPanel>
-                            </MenuItem.Header>
-
-                            <MenuItem.ItemTemplate>
-                                <DataTemplate>
-                                    <Border BorderThickness="1" BorderBrush="Black" Margin="-30,-3,-30,-3">
-                                        <TextBlock Text="{Binding Name}" MouseLeftButtonDown="MenuMethod_MouseLeftButtonDown" HorizontalAlignment="Stretch" />
-                                    </Border>
-                                </DataTemplate>
-                            </MenuItem.ItemTemplate>
-                        </MenuItem>
-                    </Menu>
+                    
                     <Button Name="clearMethodMenuButton" Click="onClickClearMethodMenuButton">
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/icon/clear.png" Height="16" Width="16" />
@@ -65,8 +49,24 @@
 
                 </ToolBar>
             </ToolBarTray>
+            <ToolBarTray   IsLocked="True" Grid.Row="0">
+                <ToolBar >
 
-            <ListBox Name="lv_methodSelected" Grid.Row="1"
+                    <Button Click="onClickUpPresetMethodMenuButton">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/icon/upload.png" Height="16" Width="16" />
+                            <TextBlock Margin="5,0,10,0" FontSize="12">Up preset</TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button Click="onClickSavePresetMethodMenuButton">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/icon/download.png" Height="16" Width="16" />
+                            <TextBlock Margin="5,0,0,0" FontSize="12">Save preset</TextBlock>
+                        </StackPanel>
+                    </Button>
+                </ToolBar>
+            </ToolBarTray>
+            <ListBox Name="lv_methodSelected" Grid.Row="2"
                      AllowDrop="True"
                      Margin="5,0,5,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                      PreviewMouseDown="onClickRuleSelectedItem">
@@ -83,7 +83,7 @@
 
                 </ListBox.ItemTemplate>
             </ListBox>
-            <ListBox Name="lv_method" Grid.Row="2"
+            <ListBox Name="lv_method" Grid.Row="3"
                      AllowDrop="True"
                      Margin="5,0,5,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                      PreviewMouseDown="onClickRuleItem">
@@ -118,7 +118,7 @@
                             </Button>
                             <Button Name="clearFileButton" Click="onClickClearFileButton">
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Source="/icon/clear.png" Height="16" Width="16" />
+                                    <Image Source="/icon/clear.png" Height="16" Width="16" Margin="10,0,2,0" />
                                     <TextBlock Margin="5,0,0,0" FontSize="12">Clear</TextBlock>
                                 </StackPanel>
                             </Button>
@@ -184,6 +184,12 @@
                                     <TextBlock Text="Add" FontSize="12" />
                                 </StackPanel>
                             </Button>
+                            <Button Name="clearFolderButton" Click="onClickClearFolderButton">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/icon/clear.png" Height="16" Width="16" Margin="10,0,2,0" />
+                                    <TextBlock Margin="5,0,0,0" FontSize="12">Clear</TextBlock>
+                                </StackPanel>
+                            </Button>
                             <Button  Click="onClickChangeFolderButton">
                                 <StackPanel Orientation="Horizontal">
                                     <Image Width="16" Height="16" Source="/icon/play.png" Margin="10,0,2,0"/>
@@ -214,7 +220,7 @@
                                     <GridViewColumn Header="Path" Width="80">
                                         <GridViewColumn.CellTemplate>
                                             <DataTemplate>
-                                                <TextBlock Text="{Binding Extension}"/>
+                                                <TextBlock Text="{Binding FullPath}"/>
                                             </DataTemplate>
                                         </GridViewColumn.CellTemplate>
                                     </GridViewColumn>
