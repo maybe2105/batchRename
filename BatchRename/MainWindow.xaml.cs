@@ -177,13 +177,16 @@ namespace BatchRename
         private void onClickChangeFileButton(object sender, RoutedEventArgs e)
         {
             fileList.ForEach(file => {
+                RuleContent ruleContent = new RuleContent();
+                ruleContent.getFilesDirectories(new FileInfo[] { file.file }, false);
                 selectedRule.ForEach(rule => {
                     if (file.Error == "")
                     {
-                        rule.RuleContent.getFilesDirectories(new FileInfo[] { file.file }, false);
+                        ruleContent.Data = rule.RuleContent.Data;
+                        ruleContent.Replacer = rule.RuleContent.Replacer;
                         try
                         {
-                            Boolean result = rule.Rule.ApplyRule(rule.RuleContent); // return true if success
+                            Boolean result = rule.Rule.ApplyRule(ruleContent); // return true if success
                         }
                         catch (Exception error)
                         {
@@ -198,10 +201,13 @@ namespace BatchRename
         private void onClickChangeFolderButton(object sender, RoutedEventArgs e)
         {
             folderList.ForEach(folder => {
+                RuleContent ruleContent = new RuleContent();
+                ruleContent.getFilesDirectories(new FileInfo[] { folder.folder }, false);
                 selectedRule.ForEach(rule => {
                     if (folder.Error == "")
                     {
-                        rule.RuleContent.getFilesDirectories(new FileInfo[] { folder.folder }, false);
+                        ruleContent.Data = rule.RuleContent.Data;
+                        ruleContent.Replacer = rule.RuleContent.Replacer;
                         try
                         {
                             Boolean result = rule.Rule.ApplyRule(rule.RuleContent); // return true if success
@@ -219,6 +225,12 @@ namespace BatchRename
         private void MenuMethod_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
+        }
+
+        private void onClickClearFileButton(object sender, RoutedEventArgs e)
+        {
+            fileList.Clear();
+            lv_files.Items.Refresh();
         }
     }
 }

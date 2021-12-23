@@ -116,6 +116,12 @@
                                     <TextBlock Text="Add" FontSize="12" />
                                 </StackPanel>
                             </Button>
+                            <Button Name="clearFileButton" Click="onClickClearFileButton">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/icon/clear.png" Height="16" Width="16" />
+                                    <TextBlock Margin="5,0,0,0" FontSize="12">Clear</TextBlock>
+                                </StackPanel>
+                            </Button>
                             <Button  Click="onClickChangeFileButton">
                                 <StackPanel Orientation="Horizontal">
                                     <Image Width="16" Height="16" Source="/icon/play.png" Margin="10,0,2,0"/>
