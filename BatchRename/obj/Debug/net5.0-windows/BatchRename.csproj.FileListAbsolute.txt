@@ -52,3 +52,11 @@ C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net
 C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\ChangeExtension.baml
 C:\Users\luann\source\repos\Rename\BatchRename\obj\Debug\net5.0-windows\ChangeExtension.g.cs
 C:\Users\luann\source\repos\Rename\BatchRename\obj\Debug\net5.0-windows\ChangeExtension.baml
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\Replace.g.cs
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\Replace.baml
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\Prefix.g.cs
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\Suffix.g.cs
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\Prefix.baml
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\Suffix.baml
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\PascalCase.g.cs
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\PascalCase.baml

@@ -40,14 +40,11 @@ namespace BatchRename
             lv_folder.ItemsSource = folderList;
         }
 
-        private void MenuMethod_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
 
         private void onClickClearMethodMenuButton(object sender, RoutedEventArgs e)
         {
-
+            selectedRule.Clear();
+            lv_methodSelected.Items.Refresh();
         }
 
         private void onCLickTopMethodMenuButton(object sender, RoutedEventArgs e)
@@ -66,16 +63,6 @@ namespace BatchRename
         }
 
         private void onClickBottomMethodMenuButton(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void onClickContextMenuItem(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void onClickDeleteMethod(object sender, RoutedEventArgs e)
         {
 
         }
@@ -107,14 +94,11 @@ namespace BatchRename
                 string folderPath = folderBrowser.SelectedPath;
                 if (Directory.Exists(folderPath))
                 {
-                        folderList.Add(new FolderItem(folderPath));
+                    folderList.Add(new FolderItem(folderPath));
                 }
                 lv_folder.Items.Refresh();
             }
         }
-
-
-
 
         private void onClickRuleItem(object sender, MouseButtonEventArgs e)
         {
@@ -124,20 +108,60 @@ namespace BatchRename
             switch (ruleName)
             {
                 case "ChangeExtension":
+                     ChangeExtension changeExtensionDialog = new ChangeExtension();
+                     if (changeExtensionDialog.ShowDialog() == true)
+                     {
+                        RuleInfo ruleInfo = new RuleInfo(rule);
+                        ruleInfo.RuleContent.Data = changeExtensionDialog.Extension;
+
+                        selectedRule.Add(ruleInfo);
+                     }
+                     break;
+                case "Replace":
+                    Replace replaceDialog = new Replace();
+                    if (replaceDialog.ShowDialog() == true)
                     {
-                        ChangeExtension changeExtensionDialog = new ChangeExtension();
-                        if (changeExtensionDialog.ShowDialog() == true)
-                        {
-                            RuleInfo ruleInfo = new RuleInfo(rule);
-                            ruleInfo.RuleContent.Data = changeExtensionDialog.Extension;
+                        RuleInfo ruleInfo = new RuleInfo(rule);
+                        ruleInfo.RuleContent.Data = replaceDialog.Regex;
+                        ruleInfo.RuleContent.Replacer = replaceDialog.NewName;
 
-                            selectedRule.Add(ruleInfo);
-                        }
-                        break;
+                        selectedRule.Add(ruleInfo);
                     }
-            }
+                    break;
+                case "Suffix":
+                    Suffix suffixDialog = new Suffix();
+                    if (suffixDialog.ShowDialog() == true)
+                    {
+                        RuleInfo ruleInfo = new RuleInfo(rule);
+                        ruleInfo.RuleContent.Data = suffixDialog.suffix;
 
-            selectedRule.Add(new RuleInfo((Contract.IRule)item.DataContext));
+                        selectedRule.Add(ruleInfo);
+                    }
+                    break;
+                case "Prefix":
+                    Prefix prefixDialog = new Prefix();
+                    if (prefixDialog.ShowDialog() == true)
+                    {
+                        RuleInfo ruleInfo = new RuleInfo(rule);
+                        ruleInfo.RuleContent.Data = prefixDialog.prefix;
+
+                        selectedRule.Add(ruleInfo);
+                    }
+                    break;
+                case "PascalCase":
+                    PascalCase pascalCaseDialog = new PascalCase();
+                    if (pascalCaseDialog.ShowDialog() == true)
+                    {
+                        RuleInfo ruleInfo = new RuleInfo(rule);
+                        ruleInfo.RuleContent.Data = pascalCaseDialog.Seperator;
+
+                        selectedRule.Add(ruleInfo);
+                    }
+                    break;
+                default:
+                    selectedRule.Add(new RuleInfo(rule));
+                    break;
+            }
 
             lv_methodSelected.Items.Refresh();
         }
@@ -152,10 +176,47 @@ namespace BatchRename
 
         private void onClickChangeFileButton(object sender, RoutedEventArgs e)
         {
-
+            fileList.ForEach(file => {
+                selectedRule.ForEach(rule => {
+                    if (file.Error == "")
+                    {
+                        rule.RuleContent.getFilesDirectories(new FileInfo[] { file.file }, false);
+                        try
+                        {
+                            Boolean result = rule.Rule.ApplyRule(rule.RuleContent); // return true if success
+                        }
+                        catch (Exception error)
+                        {
+                            file.Error = error.Message;
+                            lv_files.Items.Refresh();
+                        }
+                    }
+                });
+            });
         }
 
         private void onClickChangeFolderButton(object sender, RoutedEventArgs e)
+        {
+            folderList.ForEach(folder => {
+                selectedRule.ForEach(rule => {
+                    if (folder.Error == "")
+                    {
+                        rule.RuleContent.getFilesDirectories(new FileInfo[] { folder.folder }, false);
+                        try
+                        {
+                            Boolean result = rule.Rule.ApplyRule(rule.RuleContent); // return true if success
+                        }
+                        catch (Exception error)
+                        {
+                            folder.Error = error.Message;
+                            lv_files.Items.Refresh();
+                        }
+                    }
+                });
+            });
+        }
+
+        private void MenuMethod_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
         }

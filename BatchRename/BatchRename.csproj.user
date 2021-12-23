@@ -10,12 +10,36 @@
     <Compile Update="ChangeExtension.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PascalCase.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Prefix.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Replace.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Suffix.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="ChangeExtension.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PascalCase.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Prefix.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Replace.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Suffix.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

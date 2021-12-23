@@ -42,6 +42,7 @@ namespace BatchRename
 
             this.DialogResult = false;
         }
+       
     }
     static class Extension
     {

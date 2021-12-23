@@ -16,6 +16,7 @@
     <None Remove="icon\down-arrow.png" />
     <None Remove="icon\play.png" />
     <None Remove="icon\plus.png" />
+    <None Remove="icon\question.png" />
     <None Remove="icon\sub.png" />
     <None Remove="icon\top-arrow.png" />
     <None Remove="icon\up-arrow.png" />
@@ -33,6 +34,7 @@
     <Resource Include="icon\down-arrow.png" />
     <Resource Include="icon\play.png" />
     <Resource Include="icon\plus.png" />
+    <Resource Include="icon\question.png" />
     <Resource Include="icon\sub.png" />
     <Resource Include="icon\top-arrow.png" />
     <Resource Include="icon\up-arrow.png" />
