@@ -8,7 +8,7 @@ namespace Prefix
     public class Prefix : IRule
     {
         public string RuleName { get => "Prefix"; }
-        public bool ApplyRule(RuleContent renameContent)
+        public ReturnApply ApplyRule(RuleContent renameContent)
         {
             try
             {
@@ -44,7 +44,9 @@ namespace Prefix
                 }
                 renameContent.ListOriginalFiles = newListFiles;
 
-                return true;
+
+                FileInfo returnFile = newListFiles[0];
+                return new ReturnApply(returnFile.Name, $"{returnFile.DirectoryName}\\{returnFile.Name}{returnFile.Extension}");
             }
             catch (Exception error)
             {

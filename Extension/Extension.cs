@@ -10,14 +10,14 @@ namespace Extension
     public class Extension : IRule
     {
         public string RuleName { get => "ChangeExtension"; }
-        public Boolean ApplyRule(RuleContent renameContent)
+        public ReturnApply ApplyRule(RuleContent renameContent)
         {
             try
             {
                 Regex regex = new Regex(@"^[0-9a-zA-Z]+$");
                 foreach (FileInfo fileObject in renameContent.ListOriginalFiles)
                 {
-                   
+
                     if (fileObject.Name.Length + renameContent.Data.Length - fileObject.Extension.Length > 255)
                     {
                         throw new Exception($"maximum length of the filename cannot exceed 255 characters");
@@ -37,8 +37,11 @@ namespace Extension
                     newFiles.Add(new FileInfo(newPath));
                     index++;
                 }
+                
                 renameContent.ListOriginalFiles = newFiles;
-                return true;
+
+                FileInfo returnFile = newFiles[0];
+                return new ReturnApply(returnFile.Name, $"{returnFile.DirectoryName}\\{returnFile.Name}{returnFile.Extension}");
             }
             catch (Exception error)
             {

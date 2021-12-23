@@ -23,38 +23,39 @@ namespace TestContract
 
             // Change file extension
             
-                IRule changeExtRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "ChangeExtension");
-                renameInfo.Data = "";
-                try
-                {
-                    Boolean result = changeExtRule.ApplyRule(renameInfo); // return true if success
-                }
-                catch (Exception error)
-                {
-                    Console.WriteLine(error.Message);
-                }
+            //    IRule changeExtRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "ChangeExtension");
+            //    renameInfo.Data = "";
+            //    try
+            //    {
+            //        Boolean result = changeExtRule.ApplyRule(renameInfo); // return true if success
+            //    }
+            //    catch (Exception error)
+            //    {
+            //        Console.WriteLine(error.Message);
+            //    }
             
-            // Trim file name
-                IRule trimRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "Trim");
-                try
-                {
-                    Boolean result = trimRule.ApplyRule(renameInfo); // return true if success
-                }
-                catch (Exception error)
-                {
-                    Console.WriteLine(error.Message);
-                }
+            //// Trim file name
+            //    IRule trimRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "Trim");
+            //    try
+            //    {
+            //        Boolean result = trimRule.ApplyRule(renameInfo); // return true if success
+            //    }
+            //    catch (Exception error)
+            //    {
+            //        Console.WriteLine(error.Message);
+            //    }
                 
             // Add suffix counter
             IRule counterRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "Counter");
-            //try
-            //{
-            //    Boolean result = counterRule.ApplyRule(renameInfo); // return true if success
-            //}
-            //catch (Exception error)
-            //{
-            //    Console.WriteLine(error.Message);
-            //}
+            try
+            {
+                ReturnApply result = counterRule.ApplyRule(renameInfo); // return true if success
+                Console.WriteLine(result.Name,result.Path);
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine(error.Message);
+            }
 
             // Replace by regex or string
             IRule replaceRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "Replace");
@@ -104,16 +105,16 @@ namespace TestContract
             //}
 
             // Pascal case
-            IRule pascalRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "PascalCase");
-            renameInfo.Data = "-";
-            try
-            {
-                Boolean result = pascalRule.ApplyRule(renameInfo);
-            }
-            catch (Exception error)
-            {
-                Console.WriteLine(error.Message);
-            }
+            //IRule pascalRule = LibLoader.Rules.Find(plugin => plugin.RuleName == "PascalCase");
+            //renameInfo.Data = "-";
+            //try
+            //{
+            //    Boolean result = pascalRule.ApplyRule(renameInfo);
+            //}
+            //catch (Exception error)
+            //{
+            //    Console.WriteLine(error.Message);
+            //}
         }
     }
 }

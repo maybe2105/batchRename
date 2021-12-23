@@ -10,7 +10,7 @@ namespace Suffix
     {
         public string RuleName { get => "Suffix"; }
 
-        public bool ApplyRule(RuleContent renameContent)
+        public ReturnApply ApplyRule(RuleContent renameContent)
         {
             try
             {
@@ -45,7 +45,8 @@ namespace Suffix
                 }
                 renameContent.ListOriginalFiles = newListFiles;
 
-                return true;
+                FileInfo returnFile = newListFiles[0];
+                return new ReturnApply(returnFile.Name, $"{returnFile.DirectoryName}\\{returnFile.Name}{returnFile.Extension}");
             }
             catch (Exception error)
             {

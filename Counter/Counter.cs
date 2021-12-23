@@ -15,7 +15,7 @@ namespace Counter
         public string Data { get; set; }
 
 
-        public Boolean ApplyRule(RuleContent renameContent)
+        public ReturnApply ApplyRule(RuleContent renameContent)
         {
             try
             {
@@ -49,7 +49,9 @@ namespace Counter
                     index++;
                 }
                 renameContent.ListOriginalFiles = newFiles;
-                return true;
+
+                FileInfo returnFile = newFiles[0];
+                return new ReturnApply(returnFile.Name, $"{returnFile.DirectoryName}\\{returnFile.Name}{returnFile.Extension}");
             }
             catch (Exception error)
             {

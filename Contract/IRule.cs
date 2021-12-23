@@ -6,7 +6,7 @@ namespace Contract
     {
         public string RuleName { get; }
 
-        public Boolean ApplyRule(RuleContent ruleContent);
+        public ReturnApply ApplyRule(RuleContent ruleContent);
 
     }
 }

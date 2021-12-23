@@ -11,7 +11,7 @@ namespace Replace
     {
         public string RuleName { get => "Replace"; }
 
-        public bool ApplyRule(RuleContent renameContent)
+        public ReturnApply ApplyRule(RuleContent renameContent)
         {
             foreach (FileInfo fileObject in renameContent.ListOriginalFiles)
             {
@@ -49,7 +49,8 @@ namespace Replace
             }
             renameContent.ListOriginalFiles = newListFiles;
 
-            return true;
+            FileInfo returnFile = newListFiles[0];
+            return new ReturnApply(returnFile.Name, $"{returnFile.DirectoryName}\\{returnFile.Name}{returnFile.Extension}");
         }
     }
 }

@@ -10,7 +10,7 @@ namespace PascalCase
     {
         public string RuleName { get => "PascalCase"; }
 
-        public bool ApplyRule (RuleContent renameContent)
+        public ReturnApply ApplyRule (RuleContent renameContent)
         {
             int index = 0;
 
@@ -36,7 +36,9 @@ namespace PascalCase
             }
             renameContent.ListOriginalFiles = newFiles;
 
-            return true;
+
+            FileInfo returnFile = newFiles[0];
+            return new ReturnApply(returnFile.Name, $"{returnFile.DirectoryName}\\{returnFile.Name}{returnFile.Extension}");
         }
     }
 }

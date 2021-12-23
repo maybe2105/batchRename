@@ -35,3 +35,4 @@ C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\TestContract\obj\Debug\ne
 C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\TestContract\obj\Debug\net5.0\ref\TestContract.dll
 C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\TestContract\obj\Debug\net5.0\TestContract.pdb
 C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\TestContract\obj\Debug\net5.0\TestContract.genruntimeconfig.cache
+C:\Users\luann\source\repos\Rename\TestContract\obj\Debug\net5.0\TestContract.csproj.AssemblyReference.cache

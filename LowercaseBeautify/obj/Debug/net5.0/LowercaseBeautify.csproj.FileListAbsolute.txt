@@ -12,3 +12,4 @@ C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\LowercaseB
 C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\LowercaseBeautify.dll
 C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\ref\LowercaseBeautify.dll
 C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\LowercaseBeautify.pdb
+C:\Users\luann\source\repos\Rename\LowercaseBeautify\obj\Debug\net5.0\LowercaseBeautify.csproj.AssemblyReference.cache
