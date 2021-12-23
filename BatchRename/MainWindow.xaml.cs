@@ -22,7 +22,7 @@ namespace BatchRename
 {
     public partial class MainWindow : Window
     {
-        List<IRule> selectedRule;
+        List<RuleInfo> selectedRule;
         List<FileItem> fileList;
         List<FolderItem> folderList;
         public MainWindow()
@@ -30,7 +30,7 @@ namespace BatchRename
             InitializeComponent();
 
             LibLoader.loadDll();
-            selectedRule = new List<IRule>();
+            selectedRule = new List<RuleInfo>();
             fileList = new List<FileItem>();
             folderList = new List<FolderItem>();
 
@@ -99,26 +99,6 @@ namespace BatchRename
             
         }
 
-        private void onCLickTopFileMenuButton(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void onClickUpFileMenuButton(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void onClickDownFileMenuButton(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void onClickBottomFileMenuButton(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void onClickAddFolderButton(object sender, RoutedEventArgs e)
         {
             var folderBrowser = new System.Windows.Forms.FolderBrowserDialog();
@@ -133,31 +113,31 @@ namespace BatchRename
             }
         }
 
-        private void onCLickTopFolderMenuButton(object sender, RoutedEventArgs e)
-        {
 
-        }
-
-        private void onClickUpFolderMenuButton(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void onClickDownFolderMenuButton(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void onClickBottomFolderMenuButton(object sender, RoutedEventArgs e)
-        {
-
-        }
 
 
         private void onClickRuleItem(object sender, MouseButtonEventArgs e)
         {
             var item = (FrameworkElement)e.OriginalSource;
-            selectedRule.Add((Contract.IRule)item.DataContext);
+            IRule rule = (IRule)item.DataContext;
+            string ruleName = rule.RuleName;
+            switch (ruleName)
+            {
+                case "ChangeExtension":
+                    {
+                        ChangeExtension changeExtensionDialog = new ChangeExtension();
+                        if (changeExtensionDialog.ShowDialog() == true)
+                        {
+                            RuleInfo ruleInfo = new RuleInfo(rule);
+                            ruleInfo.RuleContent.Data = changeExtensionDialog.Extension;
+
+                            selectedRule.Add(ruleInfo);
+                        }
+                        break;
+                    }
+            }
+
+            selectedRule.Add(new RuleInfo((Contract.IRule)item.DataContext));
 
             lv_methodSelected.Items.Refresh();
         }
@@ -166,8 +146,18 @@ namespace BatchRename
         {
 
             var item = (FrameworkElement)e.OriginalSource;
-            selectedRule.Remove((Contract.IRule)item.DataContext);
+            selectedRule.Remove((RuleInfo)item.DataContext);
             lv_methodSelected.Items.Refresh();
+        }
+
+        private void onClickChangeFileButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void onClickChangeFolderButton(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

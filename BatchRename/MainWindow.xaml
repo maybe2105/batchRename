@@ -75,8 +75,9 @@
                     <DataTemplate>
                         <WrapPanel Margin="10,0,0,0">
 
-                            <TextBlock FlowDirection="LeftToRight" Width="200" Text="{Binding RuleName}" FontSize="16"/>
+                            <TextBlock FlowDirection="LeftToRight" Width="200" Text="{Binding Rule.RuleName}" FontSize="16"/>
 
+                            <Image Width="16" Height="16" Source="/icon/sub.png"/>
                         </WrapPanel>
                     </DataTemplate>
 
@@ -90,10 +91,9 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <WrapPanel Margin="10,0,0,0">
-
-                                <TextBlock FlowDirection="LeftToRight" Width="200" Text="{Binding RuleName}" FontSize="16"/>
-
-                         </WrapPanel>
+                            <TextBlock FlowDirection="LeftToRight" Width="200" Text="{Binding RuleName}" FontSize="16"/>
+                            <Image Width="16" Height="16" Source="/icon/plus.png"/>
+                        </WrapPanel>
                     </DataTemplate>
                     
                 </ListBox.ItemTemplate>
@@ -112,21 +112,15 @@
                         <ToolBar  >
                             <Button  Click="onClickAddFileButton">
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Width="16" Height="16" Source="/icon/add_file.png" />
+                                    <Image Width="16" Height="16" Source="/icon/add_file.png" Margin="10,0,2,0"/>
                                     <TextBlock Text="Add" FontSize="12" />
                                 </StackPanel>
                             </Button>
-                            <Button Click="onCLickTopFileMenuButton">
-                                <Image Source="/icon/top-arrow.png" Height="16" Width="16"/>
-                            </Button>
-                            <Button Click="onClickUpFileMenuButton">
-                                <Image Source="/icon/up-arrow.png" Height="16" Width="16"/>
-                            </Button>
-                            <Button Click="onClickDownFileMenuButton">
-                                <Image Source="/icon/down-arrow.png" Height="16" Width="16"/>
-                            </Button>
-                            <Button Click="onClickBottomFileMenuButton">
-                                <Image Source="/icon/bottom-arrow.png" Height="16" Width="16"/>
+                            <Button  Click="onClickChangeFileButton">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Width="16" Height="16" Source="/icon/play.png" Margin="10,0,2,0"/>
+                                    <TextBlock Text="Change" FontSize="12" />
+                                </StackPanel>
                             </Button>
                         </ToolBar>
                     </ToolBarTray>
@@ -180,21 +174,15 @@
                         <ToolBar  >
                             <Button  Click="onClickAddFolderButton">
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Width="16" Height="16" Source="/icon/add_file.png" />
+                                    <Image Width="16" Height="16" Source="/icon/add_file.png"  Margin="10,0,2,0"/>
                                     <TextBlock Text="Add" FontSize="12" />
                                 </StackPanel>
                             </Button>
-                            <Button Click="onCLickTopFolderMenuButton">
-                                <Image Source="/icon/top-arrow.png" Height="16" Width="16"/>
-                            </Button>
-                            <Button Click="onClickUpFolderMenuButton">
-                                <Image Source="/icon/up-arrow.png" Height="16" Width="16"/>
-                            </Button>
-                            <Button Click="onClickDownFolderMenuButton">
-                                <Image Source="/icon/down-arrow.png" Height="16" Width="16"/>
-                            </Button>
-                            <Button Click="onClickBottomFolderMenuButton">
-                                <Image Source="/icon/bottom-arrow.png" Height="16" Width="16"/>
+                            <Button  Click="onClickChangeFolderButton">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Width="16" Height="16" Source="/icon/play.png" Margin="10,0,2,0"/>
+                                    <TextBlock Text="Change" FontSize="12" />
+                                </StackPanel>
                             </Button>
                         </ToolBar>
                     </ToolBarTray>

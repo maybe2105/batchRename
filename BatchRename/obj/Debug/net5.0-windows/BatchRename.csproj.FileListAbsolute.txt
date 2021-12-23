@@ -48,3 +48,5 @@ C:\Users\luann\source\repos\Rename\BatchRename\obj\Debug\net5.0-windows\BatchRen
 C:\Users\luann\source\repos\Rename\BatchRename\obj\Debug\net5.0-windows\ref\BatchRename.dll
 C:\Users\luann\source\repos\Rename\BatchRename\obj\Debug\net5.0-windows\BatchRename.pdb
 C:\Users\luann\source\repos\Rename\BatchRename\obj\Debug\net5.0-windows\BatchRename.genruntimeconfig.cache
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\ChangeExtension.g.cs
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\BatchRename\obj\Debug\net5.0-windows\ChangeExtension.baml
