@@ -52,7 +52,7 @@
             <ToolBarTray   IsLocked="True" Grid.Row="0">
                 <ToolBar >
 
-                    <Button Click="onClickUpPresetMethodMenuButton">
+                    <Button Click="onClickUpPresetMethodMenuButton" >
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/icon/upload.png" Height="16" Width="16" />
                             <TextBlock Margin="5,0,10,0" FontSize="12">Up preset</TextBlock>
@@ -101,7 +101,7 @@
         </Grid>
 
         <TabControl  Name="Tab" SelectionChanged="onTabSelection" Grid.Column="1" Grid.Row="1">
-            <TabItem Header="Change Files">
+            <TabItem AllowDrop="True" Header="Change Files" Drop="fileDrop" PreviewDragOver="TabItem_PreviewDragOver">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
@@ -169,7 +169,7 @@
                     </ScrollViewer>
                 </Grid>
             </TabItem>
-            <TabItem Header="Change Folders">
+            <TabItem AllowDrop="True" Header="Change Folder" Drop="FolderDrop" PreviewDragOver="TabItem_PreviewDragOver">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>

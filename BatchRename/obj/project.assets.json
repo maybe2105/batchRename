@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Contract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -15,6 +24,33 @@
     }
   },
   "libraries": {
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Contract/1.0.0": {
       "type": "project",
       "path": "../Contract/Contract.csproj",
@@ -23,23 +59,24 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "Contract >= 1.0.0"
+      "Contract >= 1.0.0",
+      "Newtonsoft.Json >= 13.0.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tien\\.nuget\\packages\\": {}
+    "C:\\Users\\luann\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\BatchRename.csproj",
+      "projectUniqueName": "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\BatchRename.csproj",
       "projectName": "BatchRename",
-      "projectPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\BatchRename.csproj",
-      "packagesPath": "C:\\Users\\Tien\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\obj\\",
+      "projectPath": "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\BatchRename.csproj",
+      "packagesPath": "C:\\Users\\luann\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\luann\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +90,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj": {
-              "projectPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj"
+            "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj": {
+              "projectPath": "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj"
             }
           }
         }
@@ -68,6 +105,12 @@
     "frameworks": {
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -78,6 +121,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.12, 5.0.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

@@ -15,8 +15,14 @@ using System.Windows.Shapes;
 using System.Windows.Forms;
 using System.IO;
 using Microsoft.Win32;
-
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using Contract;
+using Newtonsoft.Json;
+
+using DataFormats = System.Windows.Forms.DataFormats;
+using SaveFileDialog = System.Windows.Forms.SaveFileDialog;
+using MessageBox = System.Windows.MessageBox;
 
 namespace BatchRename
 {
@@ -189,7 +195,7 @@ namespace BatchRename
             });
             fileList.ForEach(file => {
                 RuleContent ruleContent = new RuleContent();
-                ruleContent.getFilesDirectories(new FileInfo[] { file.file }, false);
+                ruleContent.getFilesDirectories(new FileInfo[] { file.file }, true);
                 selectedRule.ForEach(rule => {
                     if (file.Error == "")
                     {
@@ -259,12 +265,189 @@ namespace BatchRename
 
         private void onClickUpPresetMethodMenuButton(object sender, RoutedEventArgs e)
         {
+             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog() { 
+                 Filter = "Json files (*.json)|*.json",
+             };
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
+            if(dlg.ShowDialog() == true)
+            {
+                if (File.Exists(dlg.FileName))
+                {
+                    filePath = dlg.FileName;
 
+                    //Read the contents of the file into a stream
+                    var fileStream = dlg.OpenFile();
+
+                    using (StreamReader reader = new StreamReader(fileStream))
+                    {
+                        string json = reader.ReadToEnd();
+                        List<Preset> items = JsonConvert.DeserializeObject<List<Preset>>(json);
+
+                        items.ForEach(preset =>
+                        {
+
+                            IRule rule = LibLoader.Rules.Find(plugin => plugin.RuleName == preset.RuleName);
+                            string ruleName = preset.RuleName;
+                            string Data = preset.Data;
+                            string Replacer = preset.Replacer;
+                            switch (ruleName)
+                            {
+                                case "ChangeExtension":
+                                    {
+                                        RuleInfo ruleInfo = new RuleInfo(rule);
+                                        ruleInfo.RuleContent.Data = Data;
+
+                                        selectedRule.Add(ruleInfo);
+
+                                        break;
+                                    }
+                                case "Replace":
+                                    {
+
+                                        RuleInfo ruleInfo = new RuleInfo(rule);
+                                        ruleInfo.RuleContent.Data = Data;
+                                        ruleInfo.RuleContent.Replacer = Replacer;
+                                        selectedRule.Add(ruleInfo);
+
+                                    }
+
+                                    break;
+                                case "Suffix":
+                                    {
+                                        RuleInfo ruleInfo = new RuleInfo(rule);
+                                        ruleInfo.RuleContent.Data = Data;
+
+                                        selectedRule.Add(ruleInfo);
+                                    }
+                                    break;
+                                case "Prefix":
+                                    {
+                                        RuleInfo ruleInfo = new RuleInfo(rule);
+                                        ruleInfo.RuleContent.Data = Data;
+
+                                        selectedRule.Add(ruleInfo);
+                                    }
+                                    break;
+                                case "PascalCase":
+                                    {
+                                        RuleInfo ruleInfo = new RuleInfo(rule);
+                                        ruleInfo.RuleContent.Data = Data;
+
+                                        selectedRule.Add(ruleInfo);
+                                    }
+                                    break;
+                                default:
+                                    selectedRule.Add(new RuleInfo(rule));
+                                    break;
+                            }
+
+                            lv_methodSelected.Items.Refresh();
+                        });
+                    };
+
+                    
+                }
+            }
         }
 
         private void onClickSavePresetMethodMenuButton(object sender, RoutedEventArgs e)
         {
+            List<Preset> _data = new List<Preset>();
+
+
+            selectedRule.ForEach(rule =>
+            {
+                if(rule.Rule.RuleName == "Replacer")
+                {
+                    _data.Add(new Preset
+                    {
+                        RuleName = rule.Rule.RuleName,
+                        Data = rule.RuleContent.Data,
+                        Replacer = rule.RuleContent.Replacer,
+                    });;
+                  //  _data.Add(new Preset(rule.Rule.RuleName,rule.RuleContent.Data,rule.RuleContent.Replacer));
+                }else if(rule.Rule.RuleName == "ChangeExtension" | rule.Rule.RuleName == "Prefix" | rule.Rule.RuleName == "Suffix" | rule.Rule.RuleName == "Pascal")
+                {
+                    _data.Add(new Preset
+                    {
+                        RuleName = rule.Rule.RuleName,
+                        Data = rule.RuleContent.Data,
+                    }); ;
+                    //      _data.Add(new Preset(rule.Rule.RuleName, rule.RuleContent.Data));
+                }
+                else
+                {
+                    _data.Add(new Preset
+                    {
+                        RuleName = rule.Rule.RuleName,
+                    }); ;
+                 //   _data.Add(new Preset(rule.Rule.RuleName));
+                }
+            });
+
+            string json = JsonConvert.SerializeObject(_data.ToArray());
+
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Json files (*.json)|*.json";
+            saveFileDialog1.ShowDialog();
+            if (saveFileDialog1.FileName != "")
+            {
+                try { 
+                File.WriteAllText(saveFileDialog1.FileName, json);
+                   MessageBox.Show("Preset Saved As Json File", "Save Success", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                }
+                catch (Exception error)
+                {
+                   MessageBox.Show("Unable to save file, try again.", "Save error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+                }
+            }
 
         }
+        private void fileDrop(object sender, System.Windows.DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                // Note that you can have more than one file.
+                string[] paths = (string[])e.Data.GetData(DataFormats.FileDrop);
+                foreach (string path in paths)
+                {
+                    fileList.Add(new FileItem(path));
+                }
+                lv_files.Items.Refresh();
+
+            }
+        }
+        private void FolderDrop(object sender, System.Windows.DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                // Note that you can have more than one file.
+                string[] paths = (string[])e.Data.GetData(DataFormats.FileDrop);
+                foreach (string path in paths)
+                {
+                    if (Directory.Exists(path))
+                    {
+                        folderList.Add(new FolderItem(path));
+                    }
+                }
+                lv_folder.Items.Refresh();
+
+            }
+        }
+
+        private void TabItem_PreviewDragOver(object sender, System.Windows.DragEventArgs e)
+        {
+            e.Handled = true;
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+      
     }
 }
