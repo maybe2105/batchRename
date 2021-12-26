@@ -26,7 +26,11 @@ namespace BatchRename
 
         private void btnDialogOk_Click(object sender, RoutedEventArgs e)
         {
-            this.DialogResult = true;
+            string prefix = txtAnswer.Text;
+            if (prefix != "")
+                this.DialogResult = true;
+            else
+                MessageBox.Show("Prefix can not be empty", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         public string prefix

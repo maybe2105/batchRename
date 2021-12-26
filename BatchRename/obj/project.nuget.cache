@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VXZV+D94tSo6GQ9zYx+sS9Ew+wnwMAylLJhHAZcsC5R4R0F1uzk2rf7x8h8L2wfhxB+FnCWcbjfDG5V6jcjtKw==",
+  "dgSpecHash": "ulhx8jT2BiPkvAjoe/0Qsl0Xt335Y5vZgW4SjBmJ7wo+DJsXA3s51rJuFzr/2D8H0ZYRAhaVTUrfiFONMwlwvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\BatchRename.csproj",
+  "projectFilePath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\BatchRename.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\luann\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\luann\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+    "C:\\Users\\Tien\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

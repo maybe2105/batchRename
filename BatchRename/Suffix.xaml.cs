@@ -25,7 +25,11 @@ namespace BatchRename
         }
         private void btnDialogOk_Click(object sender, RoutedEventArgs e)
         {
-            this.DialogResult = true;
+            string suffix = txtAnswer.Text;
+            if (suffix != "")
+                this.DialogResult = true;
+            else
+                MessageBox.Show("Suffix can not be empty", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         public string suffix

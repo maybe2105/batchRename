@@ -29,7 +29,11 @@ namespace BatchRename
 
         private void btnDialogOk_Click(object sender, RoutedEventArgs e)
         {
-            this.DialogResult = true;
+            string extension = txtAnswer.Text;
+            if(extension != "")
+                this.DialogResult = true;
+            else
+                MessageBox.Show("Extension can not be empty", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         public string Extension

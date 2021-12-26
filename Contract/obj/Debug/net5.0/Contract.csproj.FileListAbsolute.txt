@@ -21,3 +21,4 @@ C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\Contract\obj\Debug\net5.0
 C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\Contract\obj\Debug\net5.0\Contract.dll
 C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\Contract\obj\Debug\net5.0\ref\Contract.dll
 C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\Contract\obj\Debug\net5.0\Contract.pdb
+C:\Users\Tien\OneDrive\Desktop\Nam\windows\batchRename\Contract\obj\Debug\net5.0\Contract.csproj.AssemblyReference.cache

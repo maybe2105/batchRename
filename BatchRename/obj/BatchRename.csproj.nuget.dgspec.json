@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\BatchRename.csproj": {}
+    "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\BatchRename.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\BatchRename.csproj": {
+    "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\BatchRename.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\BatchRename.csproj",
+        "projectUniqueName": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\BatchRename.csproj",
         "projectName": "BatchRename",
-        "projectPath": "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\BatchRename.csproj",
-        "packagesPath": "C:\\Users\\luann\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\obj\\",
+        "projectPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\BatchRename.csproj",
+        "packagesPath": "C:\\Users\\Tien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\luann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tien\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj": {
-                "projectPath": "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj"
+              "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj": {
+                "projectPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj"
               }
             }
           }
@@ -59,12 +59,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.12, 5.0.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -77,17 +71,17 @@
         }
       }
     },
-    "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj": {
+    "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj",
+        "projectUniqueName": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj",
         "projectName": "Contract",
-        "projectPath": "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj",
-        "packagesPath": "C:\\Users\\luann\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\obj\\",
+        "projectPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj",
+        "packagesPath": "C:\\Users\\Tien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\luann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tien\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

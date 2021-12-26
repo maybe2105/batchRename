@@ -30,7 +30,7 @@ namespace BatchRename
     {
         List<RuleInfo> selectedRule;
         List<FileItem> fileList;
-        List<FolderItem> folderList;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -38,12 +38,10 @@ namespace BatchRename
             LibLoader.loadDll();
             selectedRule = new List<RuleInfo>();
             fileList = new List<FileItem>();
-            folderList = new List<FolderItem>();
 
             lv_method.ItemsSource = LibLoader.Rules;
             lv_methodSelected.ItemsSource = selectedRule;
             lv_files.ItemsSource = fileList;
-            lv_folder.ItemsSource = folderList;
         }
 
 
@@ -73,11 +71,6 @@ namespace BatchRename
 
         }
 
-        private void onTabSelection(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void onClickAddFileButton(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
@@ -90,20 +83,6 @@ namespace BatchRename
                 lv_files.Items.Refresh();
             }
             
-        }
-
-        private void onClickAddFolderButton(object sender, RoutedEventArgs e)
-        {
-            var folderBrowser = new System.Windows.Forms.FolderBrowserDialog();
-            if (folderBrowser.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                string folderPath = folderBrowser.SelectedPath;
-                if (Directory.Exists(folderPath))
-                {
-                    folderList.Add(new FolderItem(folderPath));
-                }
-                lv_folder.Items.Refresh();
-            }
         }
 
         private void onClickRuleItem(object sender, MouseButtonEventArgs e)
@@ -218,49 +197,10 @@ namespace BatchRename
             });
         }
 
-        private void onClickChangeFolderButton(object sender, RoutedEventArgs e)
-        {
-            
-            folderList.ForEach(folder => {
-                RuleContent ruleContent = new RuleContent();
-                ruleContent.getFilesDirectories(new FileInfo[] { folder.folder }, false);
-                selectedRule.ForEach(rule => {
-                    if (folder.Error == "")
-                    {
-                        ruleContent.Data = rule.RuleContent.Data;
-                        ruleContent.Replacer = rule.RuleContent.Replacer;
-                        try
-                        {
-                            ReturnApply result = rule.Rule.ApplyRule(ruleContent);
-                            folder.FullPath = result.Path;
-                            folder.NewName = result.Name;
-                            lv_folder.Items.Refresh();
-                        }
-                        catch (Exception error)
-                        {
-                            folder.Error = error.Message;
-                            lv_folder.Items.Refresh();
-                        }
-                    }
-                });
-            });
-        }
-
-        private void MenuMethod_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
         private void onClickClearFileButton(object sender, RoutedEventArgs e)
         {
             fileList.Clear();
             lv_files.Items.Refresh();
-        }
-
-        private void onClickClearFolderButton(object sender, RoutedEventArgs e)
-        {
-            folderList.Clear();
-            lv_folder.Items.Refresh();
         }
 
         private void onClickUpPresetMethodMenuButton(object sender, RoutedEventArgs e)
@@ -417,24 +357,6 @@ namespace BatchRename
                     fileList.Add(new FileItem(path));
                 }
                 lv_files.Items.Refresh();
-
-            }
-        }
-        private void FolderDrop(object sender, System.Windows.DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.FileDrop))
-            {
-                // Note that you can have more than one file.
-                string[] paths = (string[])e.Data.GetData(DataFormats.FileDrop);
-                foreach (string path in paths)
-                {
-                    if (Directory.Exists(path))
-                    {
-                        folderList.Add(new FolderItem(path));
-                    }
-                }
-                lv_folder.Items.Refresh();
-
             }
         }
 

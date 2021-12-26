@@ -30,7 +30,15 @@ namespace BatchRename
 
         private void btnDialogOk_Click(object sender, RoutedEventArgs e)
         {
-            this.DialogResult = true;
+            string Regex  = regex.Text;
+            string NewName = newName.Text;
+            if (Regex == "")
+                MessageBox.Show("Regex can not be empty", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            else if (NewName == "")
+                MessageBox.Show("New name can not be empty", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            else
+                this.DialogResult = true;
+
         }
 
         private void btnDialogCancel_Click(object sender, RoutedEventArgs e)

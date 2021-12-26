@@ -26,7 +26,11 @@ namespace BatchRename
 
         private void btnDialogOk_Click(object sender, RoutedEventArgs e)
         {
-            this.DialogResult = true;
+            string seperator = txtAnswer.Text;
+            if (seperator != "")
+                this.DialogResult = true;
+            else
+                MessageBox.Show("Seperator can not be empty", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         public string Seperator

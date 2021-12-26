@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luann\\source\\repos\\Rename\\PascalCase\\PascalCase.csproj": {}
+    "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\PascalCase\\PascalCase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj": {
+    "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj",
+        "projectUniqueName": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj",
         "projectName": "Contract",
-        "projectPath": "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj",
-        "packagesPath": "C:\\Users\\luann\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\obj\\",
+        "projectPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj",
+        "packagesPath": "C:\\Users\\Tien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\luann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tien\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,17 +58,17 @@
         }
       }
     },
-    "C:\\Users\\luann\\source\\repos\\Rename\\PascalCase\\PascalCase.csproj": {
+    "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\PascalCase\\PascalCase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luann\\source\\repos\\Rename\\PascalCase\\PascalCase.csproj",
+        "projectUniqueName": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\PascalCase\\PascalCase.csproj",
         "projectName": "PascalCase",
-        "projectPath": "C:\\Users\\luann\\source\\repos\\Rename\\PascalCase\\PascalCase.csproj",
-        "packagesPath": "C:\\Users\\luann\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luann\\source\\repos\\Rename\\PascalCase\\obj\\",
+        "projectPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\PascalCase\\PascalCase.csproj",
+        "packagesPath": "C:\\Users\\Tien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\PascalCase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\luann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tien\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj": {
-                "projectPath": "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj"
+              "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj": {
+                "projectPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj"
               }
             }
           }
