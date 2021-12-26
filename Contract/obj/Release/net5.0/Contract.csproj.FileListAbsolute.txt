@@ -1,0 +1,11 @@
+C:\Users\luann\source\repos\Rename\Contract\bin\Release\net5.0\Contract.deps.json
+C:\Users\luann\source\repos\Rename\Contract\bin\Release\net5.0\Contract.dll
+C:\Users\luann\source\repos\Rename\Contract\bin\Release\net5.0\ref\Contract.dll
+C:\Users\luann\source\repos\Rename\Contract\bin\Release\net5.0\Contract.pdb
+C:\Users\luann\source\repos\Rename\Contract\obj\Release\net5.0\Contract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luann\source\repos\Rename\Contract\obj\Release\net5.0\Contract.AssemblyInfoInputs.cache
+C:\Users\luann\source\repos\Rename\Contract\obj\Release\net5.0\Contract.AssemblyInfo.cs
+C:\Users\luann\source\repos\Rename\Contract\obj\Release\net5.0\Contract.csproj.CoreCompileInputs.cache
+C:\Users\luann\source\repos\Rename\Contract\obj\Release\net5.0\Contract.dll
+C:\Users\luann\source\repos\Rename\Contract\obj\Release\net5.0\ref\Contract.dll
+C:\Users\luann\source\repos\Rename\Contract\obj\Release\net5.0\Contract.pdb

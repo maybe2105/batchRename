@@ -64,19 +64,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tien\\.nuget\\packages\\": {}
+    "C:\\Users\\luann\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\BatchRename.csproj",
+      "projectUniqueName": "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\BatchRename.csproj",
       "projectName": "BatchRename",
-      "projectPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\BatchRename.csproj",
-      "packagesPath": "C:\\Users\\Tien\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\BatchRename\\obj\\",
+      "projectPath": "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\BatchRename.csproj",
+      "packagesPath": "C:\\Users\\luann\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luann\\source\\repos\\Rename\\BatchRename\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\luann\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -90,8 +90,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj": {
-              "projectPath": "C:\\Users\\Tien\\OneDrive\\Desktop\\Nam\\windows\\batchRename\\Contract\\Contract.csproj"
+            "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj": {
+              "projectPath": "C:\\Users\\luann\\source\\repos\\Rename\\Contract\\Contract.csproj"
             }
           }
         }
@@ -121,6 +121,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.12, 5.0.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

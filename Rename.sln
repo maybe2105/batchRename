@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31919.166
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contract", "Contract\Contract.csproj", "{E2697981-13F5-4E7F-AF90-26908BC43537}"
 EndProject
@@ -21,9 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Replace", "Replace\Replace.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trim", "Trim\Trim.csproj", "{200FD6EA-E45C-4C1D-BED5-33E3A81BEB79}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestContract", "TestContract\TestContract.csproj", "{BEAE96E9-B86D-4352-AFD5-C9502EAC5244}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchRename", "BatchRename\BatchRename.csproj", "{195735D0-8771-4F4D-8BCF-8FE2CC0FA6B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BatchRename", "BatchRename\BatchRename.csproj", "{195735D0-8771-4F4D-8BCF-8FE2CC0FA6B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,10 +65,6 @@ Global
 		{200FD6EA-E45C-4C1D-BED5-33E3A81BEB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{200FD6EA-E45C-4C1D-BED5-33E3A81BEB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{200FD6EA-E45C-4C1D-BED5-33E3A81BEB79}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BEAE96E9-B86D-4352-AFD5-C9502EAC5244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEAE96E9-B86D-4352-AFD5-C9502EAC5244}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEAE96E9-B86D-4352-AFD5-C9502EAC5244}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEAE96E9-B86D-4352-AFD5-C9502EAC5244}.Release|Any CPU.Build.0 = Release|Any CPU
 		{195735D0-8771-4F4D-8BCF-8FE2CC0FA6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{195735D0-8771-4F4D-8BCF-8FE2CC0FA6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{195735D0-8771-4F4D-8BCF-8FE2CC0FA6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU

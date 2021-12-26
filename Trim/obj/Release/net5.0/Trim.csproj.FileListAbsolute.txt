@@ -1,0 +1,15 @@
+C:\Users\luann\source\repos\Rename\Trim\bin\Release\net5.0\Trim.deps.json
+C:\Users\luann\source\repos\Rename\Trim\bin\Release\net5.0\Trim.dll
+C:\Users\luann\source\repos\Rename\Trim\bin\Release\net5.0\ref\Trim.dll
+C:\Users\luann\source\repos\Rename\Trim\bin\Release\net5.0\Trim.pdb
+C:\Users\luann\source\repos\Rename\Trim\bin\Release\net5.0\Contract.dll
+C:\Users\luann\source\repos\Rename\Trim\bin\Release\net5.0\Contract.pdb
+C:\Users\luann\source\repos\Rename\Trim\obj\Release\net5.0\Trim.csproj.AssemblyReference.cache
+C:\Users\luann\source\repos\Rename\Trim\obj\Release\net5.0\Trim.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luann\source\repos\Rename\Trim\obj\Release\net5.0\Trim.AssemblyInfoInputs.cache
+C:\Users\luann\source\repos\Rename\Trim\obj\Release\net5.0\Trim.AssemblyInfo.cs
+C:\Users\luann\source\repos\Rename\Trim\obj\Release\net5.0\Trim.csproj.CoreCompileInputs.cache
+C:\Users\luann\source\repos\Rename\Trim\obj\Release\net5.0\Trim.csproj.CopyComplete
+C:\Users\luann\source\repos\Rename\Trim\obj\Release\net5.0\Trim.dll
+C:\Users\luann\source\repos\Rename\Trim\obj\Release\net5.0\ref\Trim.dll
+C:\Users\luann\source\repos\Rename\Trim\obj\Release\net5.0\Trim.pdb
